@@ -1,0 +1,79 @@
+const arr=[1,2,3,4,5,6,7,8,9];
+
+let b=arr.map(f);
+
+function f(num)
+{
+    return num*2;
+}
+
+console.log(b);
+
+let c=arr.filter(check_even);
+
+console.log(c);
+
+function check_even(num)
+{
+    return num%2==0;
+}
+
+const person={
+    
+    name:"sayandeep",
+    age:18,
+    city:"falakata"
+    
+}
+
+console.log(person.city);
+
+
+// creating the object car
+
+function car(name,year,price)
+{
+    this.name=name;
+    this.year=year;
+    this.price=price;
+}
+
+const car1=new car("audi",2011,5000);
+const car2=new car("bmw",2012,7000);
+
+console.log(car1.price);
+
+
+class company{
+    
+    constructor(name,ctc)
+    {
+        this.name=name;
+        this.ctc=ctc;
+    }
+    
+}
+
+
+const com1=new company("Google",56);
+
+const com2=new company("Jane street",97);
+
+console.log(com2.ctc);
+
+setTimeout(myfunc,3000);
+
+function myfunc()
+{
+    console.log("Writing this after 3 sec");
+}
+
+
+setInterval(msg,2000);
+
+function msg()
+{
+    console.log("writing this in a interval of 2 sec");
+    
+    
+}
