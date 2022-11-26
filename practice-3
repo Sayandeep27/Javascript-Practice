@@ -1,0 +1,70 @@
+
+const person={
+    
+    fullname:function()
+    {
+        return this.firstname+" "+this.lastname;
+    }
+    
+}
+
+
+const person1={
+    firstname:"sayandeep",
+    lastname:"sarkar"
+}
+
+
+let x=person.fullname.apply(person1);
+
+console.log(x);
+
+
+
+//---------------------------------------------------------
+
+
+const person={
+    
+    fullname:function(city,country)
+    {
+        return this.firstname+" "+this.lastname+" "+city+" "+country;
+        
+    }
+    
+    
+}
+
+
+const person1={
+    firstname:"sayandeep",
+    lastname:"sarkar"
+}
+
+let x=person.fullname.apply(person1,["falakata","india"]);
+
+console.log(x);
+
+
+
+//---------------------------------------------------------
+
+
+const person = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+person.fullName.call(person1, "Oslo", "Norway");
+
+
+
+
+
+
