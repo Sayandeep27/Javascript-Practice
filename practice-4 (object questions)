@@ -1,0 +1,192 @@
+const property="firstname";
+const name="sayandeep sarkar";
+
+const user={
+    
+    [property]:name
+}
+
+
+console.log(user);
+console.log(user.firstname);
+
+
+
+
+//--------------------------------------------------------
+
+const car={
+    name:"bmw",
+    year:1987,
+    color:"black"
+}
+
+
+for (key in car)
+{
+    console.log(car[key]);
+}
+
+//------------------------------------------------------
+
+const obj={
+    a:3,
+    b:2,
+    a:5   // takes the last assigned value of a
+}
+
+
+console.log(obj);
+
+
+//--------------------------------------------------------
+
+
+const nums={
+    a:5,
+    b:6,
+    c:"sayandeep"
+};
+
+multiply_with_2(nums);
+
+
+function multiply_with_2(obj)
+{
+    for(key in obj)
+    {
+        if(obj[key]==="number")
+        {
+            obj[key]=2*obj[key];
+        }
+    }
+}
+
+
+console.log(nums);
+
+
+//---------------------------------------------------------
+
+const a={};
+const b={key:"b"};
+const c={key:"c"};
+
+a[b]=123;
+a[c]=456;
+
+console.log(a[b]);
+
+
+//--------------------------------------------------------
+
+
+const myobj={
+    name:"sayandeep",
+    age:20,
+    city:"falakata"
+}
+
+const x=JSON.stringify(myobj);  // converting obj to json
+
+console.log(x);
+
+console.log(JSON.parse(x));  // converting obj back
+
+
+
+//-------------------------------------------------------
+
+
+console.log([..."layla"]);  // spread operator
+
+const admin1={
+    name:"sayandeep",
+    age:20
+}
+
+const admin2={
+    admin:true,
+    ...admin1
+}
+
+console.log(admin2);
+
+
+//---------------------------------------------------------
+
+
+const settings={
+    username:"sayandeep",
+    level:19,
+    health:70
+}
+
+const data=JSON.stringify(settings,["level","health"]);
+// just stringify these keys froms settings object
+
+
+console.log(data);
+
+
+
+//-------------------------------------------------------
+
+
+const p={
+    greeting:"hey!",
+    name:"sayandeep",
+    year:2
+}
+
+const q=p;
+
+p.greeting="hello";
+
+console.log(q);
+
+
+//-------------------------------------------------------
+
+
+console.log({a:1,b:2}=={a:1,b:2});
+
+console.log({a:1,b:2}==={a:1,b:2}); 
+
+     //in both the cases , it will return false
+
+
+//---------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
