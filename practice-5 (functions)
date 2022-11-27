@@ -1,0 +1,16 @@
+function square(num)
+{
+    console.log(num*num);
+}
+
+square(5);  // normal function
+
+
+
+
+// IIFE -> Immediately Invoked Function Expression
+
+(function cube(num)
+{
+    console.log(num*num*num);
+})(5);
