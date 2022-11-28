@@ -1,0 +1,91 @@
+let c=0;
+let f=32+(9*c)*5;
+console.log(f);
+
+/*
+var a=prompt("enter your age");
+
+if(a>18)
+{
+    alert("you can vote");
+}
+else
+{
+    alert("you can not vote");
+}
+
+*/
+
+const arr=[1,3,2,1,2,3,5];
+/*
+for(let x=0;x<=arr.length;x++)
+{
+    console.log(arr[x]);
+}*/
+/*
+for (let x in arr)
+{
+    console.log(arr[x]);
+}*/
+
+/*
+for(let x of arr)
+{
+    console.log(x);
+}*/
+
+
+var x=5;
+
+console.log(x>8?"true":"false");
+
+
+// IIFE function
+
+(function display(name)
+{
+    console.log("What's your name?");
+    console.log(`my name is ${name}`);
+})("sayandeep");
+
+
+// random number
+
+var r=Math.floor(Math.random()*10);
+console.log(r);
+
+var radius=5;
+
+const peri=2*Math.PI*radius;
+
+console.log(peri);
+
+
+// Date objects
+
+const d=new Date();
+
+console.log(d);
+
+
+console.log(d.getFullYear());
+console.log(d.getMonth());
+console.log(d.getHours());
+
+
+// map iteration
+
+const list=[1,2,3,4,5,6,7];
+
+list.map((item)=>{
+    console.log(item);
+})
+
+
+const p=window.prompt("enter your age","Harry Potter");
+
+console.log(p);
+
+
+
+
