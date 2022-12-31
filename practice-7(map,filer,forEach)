@@ -1,0 +1,53 @@
+
+
+const numbers=[1,2,3];
+
+let sum=0;
+
+numbers.forEach(add);
+
+
+function add(item){
+    sum+=item;
+}
+
+
+console.log(sum);
+
+
+// map method
+
+
+const arr=[1,2,3,4,5];
+
+let ans=0;
+
+arr.map((item)=>{
+    ans+=item;
+})
+
+console.log(ans);
+
+
+// filter method
+
+const num=[1,2,3,4,5,6,67,8,9,0];
+
+const newarr=num.filter((item)=>{
+    return item%2==0;
+})
+
+
+console.log(newarr);
+
+
+
+
+
+
+
+
+
+
+
+
